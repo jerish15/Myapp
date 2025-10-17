@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>luminarhostel.com</title>
+  <link rel="icon" href="Images/WhatsApp Image 2025-09-25 at 01.53.24_2d5c3929.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!--Navbar-->
+
+  <nav class="navbar navbar-expand-lg" style="background-color: white;">
+    <div class="container-fluid custom-container">
+      <a class="navbar-brand" href="#">
+        <img src="Images/WhatsApp Image 2025-09-24 at 17.07.21_bfa46780.jpg" alt="Luminar Hostel Logo" height="80">
+      </a>
+      <h4 class="container-fluid mt-2"
+        style="color: rgb(228, 109, 107); font-family:Georgia, 'Times New Roman', Times, serif; font-weight: 800;">MENS
+        & LADIES</h4>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="introduction.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Rooms.html">ROOMS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Facilities.html">FACILITIES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Gallery.html">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">CONTACT</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Food.html">FOODS</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <a href="#" class="nav-link p-3 g-5" style="width: 50px;">
+            <i class="fa-solid fa-user"></i>
+          </a>
+
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">
+      Book now
+    </button>
+
+  </nav>
+
+
+  <!--Navbar End-->
+
+  <!-- Booking Modal -->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title" id="bookingModalLabel">Book Your Stay</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="guestName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="guestName" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="guestEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="guestEmail" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="roomType" class="form-label">Room Type</label>
+              <select class="form-select" id="roomType" required>
+                <option selected disabled>Choose...</option>
+                <option>Double Sharing Room</option>
+                <option>Three Sharing Room</option>
+                <option>Four Sharing Room</option>
+                <option>Cozy Single</option>
+                <option>Bright Dorm</option>
+                <option>Studio Suite</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="checkinDate" class="form-label">Check-in Date</label>
+              <input type="date" class="form-control" id="checkinDate" required>
+            </div>
+            <div class="mb-3">
+              <label for="checkoutDate" class="form-label">Check-out Date</label>
+              <input type="date" class="form-control" id="checkoutDate" required>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Confirm Booking</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal End-->
+
+
+
+  <!--Carousel-->
+
+
+  <div id="luminarCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active"
+        style="background-image: url('Images/jw-OFDrwleTtdE-unsplash.jpg'); height: 500px; width: 100%;">
+        <div class="carousel-caption">
+          <h1>Welcome to Luminar Hostel</h1>
+          <p>A cozy place where comfort meets community.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item"
+        style="background-image: url('Images/illustration-anime-city\ \(1\).jpg');height: 500px; width: 100%;">
+        <div class="carousel-caption">
+          <h1>Modern & Comfortable</h1>
+          <p>Spacious rooms designed for relaxation and convenience.</p>
+        </div>
+      </div>
+
+      <div class="carousel-item"
+        style="background-image: url('Images/futuristic-environmentally-friendly-city-with-green-spaces.jpg');height: 500px; width: 100%;">
+        <div class="carousel-caption">
+          <h1>Stay. Connect. Explore.</h1>
+          <p>Discover the city, make friends, and feel at home.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#luminarCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#luminarCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+
+
+
+
+  <!--Carousel End-->
+
+
+
+  <!--Cards-->
+
+
+  <div class="container container-top">
+    <div class="row mb-4 align-items-center">
+      <div class="col-md-8">
+        <h1 class="mb-1" style="margin-left: 500px; color: rgb(136, 136, 217);">Luminar Hostel</h1>
+        <p class="text-muted" style="margin-left: 430px;">Shared rooms for travellers. Hover the cards to see details.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="row g-4">
+      <!-- Double Sharing Room -->
+      <div class="col-sm-6 col-md-4">
+        <div class="card hostel-card card-fade">
+          <img src="Images/48 Shared Bedroom Ideas To Maximize Space And….jpeg" class="card-img-top"
+            alt="Double Sharing Room">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Double Sharing Room</h5>
+            <p class="mb-2 text-muted small">Comfortable for two travelers, shared facilities and cozy bedding.</p>
+            <div class="info-row mb-3">
+              <div><i class="fa-solid fa-bed me-2"></i><small>2 beds</small></div>
+              <div><i class="fa-solid fa-wifi me-2"></i><small>Wi-Fi</small></div>
+              <div><i class="fa-solid fa-person-shelter me-2"></i><small>24/7 access</small></div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div><strong>₹15,000 / month</strong>
+                <div class="text-muted small">per bed</div>
+              </div>
+              <a href="#" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+          <div class="card-footer"><small class="text-muted">Shared wing • 1st floor</small></div>
+        </div>
+      </div>
+
+      <!-- Three Sharing Room -->
+      <div class="col-sm-6 col-md-4">
+        <div class="card hostel-card card-fade" style="animation-delay:.05s">
+          <img src="Images/67bd27d4-31bf-44eb-a082-48526d6afd82.jpeg" class="card-img-top" alt="Three Sharing Room">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Three Sharing Room</h5>
+            <p class="mb-2 text-muted small">Ideal for small groups. Shared facilities with friendly community space.
+            </p>
+            <div class="info-row mb-3">
+              <div><i class="fa-solid fa-bed me-2"></i><small>3 beds</small></div>
+              <div><i class="fa-solid fa-wifi me-2"></i><small>Wi-Fi</small></div>
+              <div><i class="fa-solid fa-utensils me-2"></i><small>Shared kitchen</small></div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div><strong>₹10,000 / month</strong>
+                <div class="text-muted small">per bed</div>
+              </div>
+              <a href="#" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+          <div class="card-footer"><small class="text-muted">Shared wing • 2nd floor</small></div>
+        </div>
+      </div>
+
+      <!-- Four Sharing Room -->
+      <div class="col-sm-6 col-md-4">
+        <div class="card hostel-card card-fade" style="animation-delay:.1s">
+          <img src="Images/19 Shared Bedroom Ideas for Smart Design_ Clever….jpeg" class="card-img-top"
+            alt="Four Sharing Room">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Four Sharing Room</h5>
+            <p class="mb-2 text-muted small">Perfect for groups or families. Spacious bedding and shared facilities.</p>
+            <div class="info-row mb-3">
+              <div><i class="fa-solid fa-bed me-2"></i><small>4 beds</small></div>
+              <div><i class="fa-solid fa-wifi me-2"></i><small>Wi-Fi</small></div>
+              <div><i class="fa-solid fa-person-shelter me-2"></i><small>24/7 access</small></div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div><strong>₹6,000 / month</strong>
+                <div class="text-muted small">per bed</div>
+              </div>
+              <a href="#" class="btn btn-primary btn-sm">Book</a>
+            </div>
+          </div>
+          <div class="card-footer"><small class="text-muted">Shared wing • 3rd floor</small></div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card hostel-card card-fade" style="animation-delay:.15s">
+          <img src="Images/grimsbu-bed-frame-grey__1101950_pe866876_s5.avif" class="card-img-top" alt="Cozy Single">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Cozy Single</h5>
+            <p class="mb-2 text-muted small">Solo travellers — comfy bed, reading nook and fast Wi‑Fi.</p>
+            <div class="info-row mb-3">
+              <div><i class="fa-solid fa-bed me-2"></i><small>1 bed</small></div>
+              <div><i class="fa-solid fa-wifi me-2"></i><small>High-speed Wi‑Fi</small></div>
+              <div><i class="fa-solid fa-mug-saucer me-2"></i><small>Complimentary tea</small></div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div><strong>₹699 / night</strong>
+                <div class="text-muted small">private</div>
+              </div>
+              <a href="#" class="btn btn-outline-primary btn-sm">Book</a>
+            </div>
+          </div>
+          <div class="card-footer"><small class="text-muted">Quiet wing • 1st floor</small></div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card hostel-card card-fade" style="animation-delay:.2s">
+          <img src="Images/boho dorm room boho dorm room  ideas colleges boho….jpeg" class="card-img-top"
+            alt="Bright Dorm">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Bright Dorm</h5>
+            <p class="mb-2 text-muted small">Affordable bunk-style rooms — meet other travellers in style.</p>
+            <div class="info-row mb-3">
+              <div><i class="fa-solid fa-person-swimming me-2"></i><small>Shared bathroom</small></div>
+              <div><i class="fa-solid fa-lock me-2"></i><small>Lockers</small></div>
+              <div><i class="fa-solid fa-person-shelter me-2"></i><small>24/7 reception</small></div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div><strong>₹349 / night</strong>
+                <div class="text-muted small">per bed</div>
+              </div>
+              <a href="#" class="btn btn-primary btn-sm">Reserve</a>
+            </div>
+          </div>
+          <div class="card-footer"><small class="text-muted">Upper deck • Near common area</small></div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card hostel-card card-fade" style="animation-delay:.25s">
+          <img src="Images/bb4692ec-b748-4223-adb1-42ddc1f26aa3.jpeg" class="card-img-top" alt="Studio Suite">
+          <div class="card-body">
+            <h5 class="card-title mb-1">Studio Suite</h5>
+            <p class="mb-2 text-muted small">For couples or creators — workspace, private bath and extra space.</p>
+            <div class="info-row mb-3">
+              <div><i class="fa-solid fa-couch me-2"></i><small>Lounge area</small></div>
+              <div><i class="fa-solid fa-shower me-2"></i><small>Private bath</small></div>
+              <div><i class="fa-solid fa-tv me-2"></i><small>Smart TV</small></div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div><strong>₹1299 / night</strong>
+                <div class="text-muted small">room</div>
+              </div>
+              <a href="#" class="btn btn-outline-primary btn-sm">Check</a>
+            </div>
+          </div>
+          <div class="card-footer"><small class="text-muted">Top floor • Great view</small></div>
+        </div>
+      </div>
+
+
+
+      <!--Foods Travellers-->
+
+
+
+      <div class="container container-top">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-8">
+            <h1 class="mb-1">Luminar Hostel — Foods for Travellers</h1>
+            <p class="text-muted">Delicious meals and snacks to keep travellers energized.</p>
+          </div>
+          <div class="col-md-4 text-md-end">
+            <span class="badge-accent">Tasty & Fresh 🍴</span>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Food 1 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="card food-card card-fade">
+              <img src="Images/breakfast.jpg" class="card-img-top" alt="Continental Breakfast">
+              <div class="card-body">
+                <h5 class="card-title mb-1">Continental Breakfast</h5>
+                <p class="mb-2 text-muted small">Fresh pastries, fruits, and hot beverages to start your day right.</p>
+                <div class="info-row mb-3">
+                  <div><i class="fa-solid fa-utensils me-2"></i><small>Vegetarian options</small></div>
+                  <div><i class="fa-solid fa-mug-saucer me-2"></i><small>Coffee/Tea</small></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div><strong>₹199</strong>
+                    <div class="text-muted small">per meal</div>
+                  </div>
+                  <a href="#" class="btn btn-primary btn-sm">Order</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Food 2 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="card food-card card-fade" style="animation-delay:.05s">
+              <img src="Images/hearty_lunch.jpg" class="card-img-top" alt="Hearty Lunch">
+              <div class="card-body">
+                <h5 class="card-title mb-1">Hearty Lunch</h5>
+                <p class="mb-2 text-muted small">Balanced meals with proteins, veggies, and grains to fuel your
+                  adventures.</p>
+                <div class="info-row mb-3">
+                  <div><i class="fa-solid fa-carrot me-2"></i><small>Vegan options</small></div>
+                  <div><i class="fa-solid fa-bowl-food me-2"></i><small>Gluten-free options</small></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div><strong>₹299</strong>
+                    <div class="text-muted small">per meal</div>
+                  </div>
+                  <a href="#" class="btn btn-primary btn-sm">Order</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Food 3 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="card food-card card-fade" style="animation-delay:.1s">
+              <img src="Images/snacks.jpeg" class="card-img-top" alt="Evening Snacks">
+              <div class="card-body">
+                <h5 class="card-title mb-1">Evening Snacks</h5>
+                <p class="mb-2 text-muted small">Light and tasty snacks to recharge after a day of exploration.</p>
+                <div class="info-row mb-3">
+                  <div><i class="fa-solid fa-cheese me-2"></i><small>Cheese & crackers</small></div>
+                  <div><i class="fa-solid fa-apple-whole me-2"></i><small>Fruits</small></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div><strong>₹149</strong>
+                    <div class="text-muted small">per serving</div>
+                  </div>
+                  <a href="#" class="btn btn-primary btn-sm">Order</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--Foods Travellers End-->
+
+          <!--Foods Hostellers-->
+
+
+
+          <div class="container my-5">
+            <h1 class="mb-4">Hostelers Kerala Foods & Timings</h1>
+            <table class="table table-bordered table-striped">
+              <thead class="table-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Day</th>
+                  <th scope="col">Morning (7:00-9:00 AM)</th>
+                  <th scope="col">Noon (12:30-2:00 PM)</th>
+                  <th scope="col">Evening (4:30-6:00 PM)</th>
+                  <th scope="col">Night (8:00-9:30 PM)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Monday</td>
+                  <td>Idli, Dosa</td>
+                  <td>Kerala Sadya</td>
+                  <td>Tea & Snacks</td>
+                  <td>Chapati & Curry</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Tuesday</td>
+                  <td>Upma, Puttu</td>
+                  <td>Fish Curry Rice</td>
+                  <td>Tea & Snacks</td>
+                  <td>Vegetable Stew & Appam</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Wednesday</td>
+                  <td>Idiyappam & Milk</td>
+                  <td>Beef Curry Rice</td>
+                  <td>Tea & Snacks</td>
+                  <td>Rice & Dal</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Thursday</td>
+                  <td>Dosa & Chutney</td>
+                  <td>Chicken Curry Rice</td>
+                  <td>Tea & Snacks</td>
+                  <td>Puttu & Kadala Curry</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Friday</td>
+                  <td>Puttu & Banana</td>
+                  <td>Kerala Sadya</td>
+                  <td>Tea & Snacks</td>
+                  <td>Chapati & Vegetable Curry</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Saturday</td>
+                  <td>Idli & Coconut Chutney</td>
+                  <td>Fish Curry Rice</td>
+                  <td>Tea & Snacks</td>
+                  <td>Appam & Stew</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Sunday</td>
+                  <td>Upma & Banana</td>
+                  <td>Chicken Curry Rice</td>
+                  <td>Tea & Snacks</td>
+                  <td>Puttu & Kadala Curry</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+
+
+
+
+
+
+          <!--Foods Hostellers End-->
+
+
+
+
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
+<!--Facilities cards-->
+
+<!--Facilities Section-->
+<div class="container my-5">
+  <h1 class="mb-4">Our Facilities</h1>
+  <div class="row g-4">
+    <!-- Facility 1 -->
+    <div class="col-sm-6 col-md-4">
+      <div class="card text-center h-100 shadow-sm">
+        <div class="card-body">
+          <i class="fa-solid fa-wifi fa-3x mb-3 text-primary"></i>
+          <h5 class="card-title">Free Wi-Fi</h5>
+          <p class="text-muted small">High-speed internet available 24/7 in all rooms and common areas.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Facility 2 -->
+    <div class="col-sm-6 col-md-4">
+      <div class="card text-center h-100 shadow-sm">
+        <div class="card-body">
+          <i class="fa-solid fa-shower fa-3x mb-3 text-success"></i>
+          <h5 class="card-title">Clean Bathrooms</h5>
+          <p class="text-muted small">Shared and private bathrooms, cleaned regularly for your comfort.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Facility 3 -->
+    <div class="col-sm-6 col-md-4">
+      <div class="card text-center h-100 shadow-sm">
+        <div class="card-body">
+          <i class="fa-solid fa-kitchen-set fa-3x mb-3 text-warning"></i>
+          <h5 class="card-title">Shared Kitchen</h5>
+          <p class="text-muted small">Cook your own meals or share recipes in our fully equipped kitchen.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Facility 4 -->
+    <div class="col-sm-6 col-md-4">
+      <div class="card text-center h-100 shadow-sm">
+        <div class="card-body">
+          <i class="fa-solid fa-dumbbell fa-3x mb-3 text-danger"></i>
+          <h5 class="card-title">Fitness Corner</h5>
+          <p class="text-muted small">Stay active with basic gym equipment and yoga mats available.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Facility 5 -->
+    <div class="col-sm-6 col-md-4">
+      <div class="card text-center h-100 shadow-sm">
+        <div class="card-body">
+          <i class="fa-solid fa-laptop-house fa-3x mb-3 text-info"></i>
+          <h5 class="card-title">Study/Work Area</h5>
+          <p class="text-muted small">Dedicated quiet zone for students and remote workers.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Facility 6 -->
+    <div class="col-sm-6 col-md-4">
+      <div class="card text-center h-100 shadow-sm">
+        <div class="card-body">
+          <i class="fa-solid fa-shield-halved fa-3x mb-3 text-secondary"></i>
+          <h5 class="card-title">24/7 Security</h5>
+          <p class="text-muted small">CCTV cameras and staff ensure safety for all hostelers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Facilities Section End-->
+
+
+<!--Gallery-->
+
+
+<!-- Gallery Section -->
+<div class="container my-5">
+  <h1 class="mb-4 text-center">Gallery</h1>
+  <div class="row g-4">
+    <!-- Image 1 -->
+    <div class="col-sm-6 col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="Images/gallery(1).jpeg" class="card-img-top" alt="Hostel Room">
+      </div>
+    </div>
+    <!-- Image 2 -->
+    <div class="col-sm-6 col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="Images/gallery(2).webp" class="card-img-top" alt="Kerala Food">
+      </div>
+    </div>
+    <!-- Image 3 -->
+    <div class="col-sm-6 col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="Images/gallery(3).jpeg" class="card-img-top" alt="Common Area">
+      </div>
+    </div>
+    <!-- Image 4 -->
+    <div class="col-sm-6 col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="Images/gallery(4).jpeg" class="card-img-top" alt="Study Area">
+      </div>
+    </div>
+    <!-- Image 5 -->
+    <div class="col-sm-6 col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="Images/gallery(5).webp" class="card-img-top" alt="Scenery">
+      </div>
+    </div>
+    <!-- Image 6 -->
+    <div class="col-sm-6 col-md-4">
+      <div class="card shadow-sm h-100">
+        <img src="Images/gallery(7).jpg" class="card-img-top" alt="Snacks">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Gallery Section End -->
+
+
+
+<!--Gallery End-->
+
+
+
+
+
+
+
+<!--Cards End-->
+
+<!--About us-->
+
+<div class="container about-container">
+  <!-- First row: 2 boxes side by side -->
+  <div class="row">
+    <div class="col-lg-6 mb-4">
+      <div class="about-card">
+        <h2>About Luminar Hostel</h2>
+        <p>
+          Welcome to <strong>Luminar Hostel</strong> — a cozy, safe, and modern living space designed for students,
+          working professionals, and travelers.
+          We focus on providing a balance of comfort, community, and convenience, making sure you feel at home while
+          staying connected.
+        </p>
+        <p>
+          With our centrally located facilities, you’ll have easy access to educational institutions, tech parks, and
+          city attractions.
+          Our aim is to make your hostel life stress-free, fun, and memorable.
+        </p>
+
+        <div class="highlight-box mt-3">
+          <h5><i class="bi bi-star-fill text-primary"></i> What Makes Us Special</h5>
+          <ul class="mb-0">
+            <li>Safe and clean environment</li>
+            <li>Affordable shared & private rooms</li>
+            <li>Delicious Kerala-style food & snacks</li>
+            <li>Friendly community and cultural events</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 mb-4">
+      <div class="about-card">
+        <h2>Our Mission & Vision</h2>
+        <p>
+          At Luminar Hostel, our mission is to create a vibrant space that brings people together from different walks
+          of life.
+          We believe hostel life should not only be about accommodation but also about sharing experiences, making new
+          friends, and building lifelong memories.
+        </p>
+        <p>
+          Our vision is to become the <em>most trusted hostel brand in Kerala</em> — combining hospitality,
+          affordability, and innovation.
+          Whether you’re a student, traveler, or working professional, Luminar Hostel is where your journey finds a
+          home.
+        </p>
+
+        <div class="highlight-box mt-3">
+          <h5><i class="bi bi-globe2 text-primary"></i> Our Values</h5>
+          <p>
+            Community • Comfort • Safety • Affordability • Growth
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second row: 1 box centered -->
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="about-card">
+        <h2>Our Hostel Locations</h2>
+        <p>We are expanding across Kerala to provide safe and affordable stays in multiple cities:</p>
+
+        <div class="location-list">
+          <h5><i class="bi bi-geo-alt-fill text-danger"></i> Kochi</h5>
+          <p>
+            <i class="bi bi-telephone-fill text-success"></i> +91 8086 651 651 &nbsp; <br>
+            <i class="bi bi-whatsapp text-success"></i> <a href="https://wa.me/918086651651" target="_blank">+91 8086
+              651 651</a>
+          </p>
+          <p><i class="bi bi-geo"></i> Near Kakkanad, Smart City</p>
+
+          <h5><i class="bi bi-geo-alt-fill text-danger"></i> Trivandrum</h5>
+          <p>
+            <i class="bi bi-telephone-fill text-success"></i> +91 8086 651 651 &nbsp; <br>
+            <i class="bi bi-whatsapp text-success"></i> <a href="https://wa.me/918086651651" target="_blank">+91 8086
+              651 651</a>
+          </p>
+          <p><i class="bi bi-geo"></i> Kazhakootam, Near TechnoPark</p>
+
+          <h5><i class="bi bi-geo-alt-fill text-danger"></i> Thrissur</h5>
+          <p>
+            <i class="bi bi-telephone-fill text-success"></i> +91 8086 651 651 &nbsp; <br>
+            <i class="bi bi-whatsapp text-success"></i> <a href="https://wa.me/918086651651" target="_blank">+91 8086
+              651 651</a>
+          </p>
+          <p><i class="bi bi-geo"></i> Near MG Road</p>
+
+          <h5><i class="bi bi-geo-alt-fill text-danger"></i> Kottayam</h5>
+          <p>
+            <i class="bi bi-telephone-fill text-success"></i> +91 8086 651 651 &nbsp; <br>
+            <i class="bi bi-whatsapp text-success"></i> <a href="https://wa.me/918086651651" target="_blank">+91 8086
+              651 651</a>
+          </p>
+          <p><i class="bi bi-geo"></i> Near CMS College Road</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!--About us End-->
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
